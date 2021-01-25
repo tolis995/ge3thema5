@@ -1,17 +1,26 @@
 package ge3thema5;
 
-import javax.xml.xpath.XPathVariableResolver;
-
 public class Register {
-	private boolean in, out, prevState;
+	private int prevState, nextState;
 	
-	Register(boolean in, boolean out, boolean prevState) {
-		this.in=in;
-		this.out=out;
+	Register(int prevState, int nextState) {
 		this.prevState=prevState;
+		this.nextState=nextState;
 	}
 	
-	public boolean setRegister(boolean in) {
-		return this.prevState ;
+	public void setPrevState() {
+		this.prevState=1 ;
+	}
+	
+	public void setNextState() {
+		this.nextState=1 ;
+	}
+	
+	public void resetPrevState() {
+		this.prevState=0 ;
+	}
+	
+	public void resetNextState() {
+		this.nextState=0 ;
 	}
 }
