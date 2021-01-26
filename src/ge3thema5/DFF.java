@@ -1,7 +1,7 @@
 package ge3thema5;
 
 public class DFF {
-	private int d, q;
+	public int d, q;
 	
 	DFF(int d, int q) {
 		this.d=d;
