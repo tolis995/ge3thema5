@@ -9,13 +9,11 @@ public class MainApp {
 	System.out.println("Γραπτή Εργασία 3 - Θέμα 5 - Συνελικτικοί κώδικες.");
 	System.out.println("----+-----------------------------------------------------");
 	dispHeaders();
-	Register k1=new Register(0,0);
-	Register k2=new Register(0,0);
-	Register k3=new Register(0,0);
+
 	int c1=0;
-	for (clock=0; clock<16; clock++) {
+//	for (clock=0; clock<16; clock++) {
 		// System.out.println(dec2bin(clock));
-		System.out.println(clock+" |");
+//		System.out.println(clock+" |");
 		for (int u1=0;u1<2;u1++) {
 			System.out.println("u1="+u1);
 				

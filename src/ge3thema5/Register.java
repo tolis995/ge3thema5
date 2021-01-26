@@ -1,23 +1,23 @@
 package ge3thema5;
 
 public class Register {
-	private int prevState, nextState;
+	private int state, nextState;
 	
-	Register(int prevState, int nextState) {
-		this.prevState=prevState;
+	Register(int state, int nextState) {
+		this.state=state;
 		this.nextState=nextState;
 	}
 	
-	public void setPrevState() {
-		this.prevState=1 ;
+	public void setState(int a) {
+		this.state=a ;
 	}
 	
-	public void setNextState() {
-		this.nextState=1 ;
+	public void setNextState(int a) {
+		this.nextState=a ;
 	}
 	
-	public void resetPrevState() {
-		this.prevState=0 ;
+	public void resetState() {
+		this.state=0 ;
 	}
 	
 	public void resetNextState() {
